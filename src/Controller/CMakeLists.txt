@@ -6,7 +6,7 @@ set(SOURCE_FILES
     SearchController.cpp
 )
 
-add_library(Controller SHARED STATIC ${SOURCE_FILES})
+add_library(Controller ${SOURCE_FILES})
 
 install(TARGETS Controller DESTINATION ${TRAKOR_INSTALL_LIB_DIR})
 install(FILES SearchController.h DESTINATION ${TRAKOR_INSTALL_INCLUDE_DIR})
